@@ -1,0 +1,132 @@
+/*START Interior Top (BANNER)--------------------------------------------------*/
+.interior-banner {
+  //min-height: 518px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  @media (max-width: 1499.98px){
+    min-height: 420px;
+  }
+  @media (max-width: 991.98px){
+    min-height: 370px;
+  }
+  .banner-wrapping{
+    height: 100%;
+    padding-top: inherit !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    @media (max-width: 991.98px){
+      width: 100%;
+    }
+    img{
+      height: 100%;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+      z-index: 1;
+      &.top{
+        object-position: top;
+      }
+      &.center{
+        object-position: center;
+      }
+      &.bottom{
+        object-position: bottom;
+      }
+    }
+    &::before{
+      content: "";
+      // background-color: rgba(0, 0, 0, 0.32);
+      // background-repeat: repeat-x;
+      // background-image: url('../images/interior-page-banner_overlay&shadows.png');
+      // background-size: cover;
+      // opacity: 0.7;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+    &::after{
+      content: none;
+      @include gradientshadowVerTopHeader;
+      height: 100%;
+      opacity: 0.18;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+  .title-page{
+    display: block;
+    max-width: 100%;
+    min-width: inherit;
+    padding: 190px 0 200px;
+    position: relative;
+    text-align: left;
+    width: 48%;
+    z-index: 10;
+    @media (max-width: 991.98px){
+      width: 90%;
+    }
+    @media (max-width: 575.98px){
+      width: 100%;
+      padding: 150px 0;
+    }
+    h1, h2{
+      @include font2;
+      color: $primary !important;
+      font-size: 52px;
+      font-stretch: normal;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: normal;
+      line-height: 1;
+      margin: 0 0 10px 0!important;
+      text-transform: capitalize;
+      &::selection {
+        background-color: $selector_color;
+        color: white;
+      }
+      @media (max-width: 991.98px){
+        font-size: 40px !important;
+        line-height: 1;
+      }
+      @media (max-width: 575.98px){
+        font-size: 35px !important;
+      }
+    }
+    p{
+      @include font1;
+      color: $white;
+      font-size: 15px;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.4;
+      margin: 0;
+      strong{
+        color: $white;
+        font-weight: bold !important;
+      }
+      &::selection {
+        background-color: $selector_color;
+        color: white;
+      }
+    }
+  }
+  &.i-singular-post, &.i-single{
+    .title-page{
+      h1{ 
+        font-size: 45px !important;
+      }
+    }
+  }
+}
+/*END Interior Top (BANNER)------------------------------------------*/

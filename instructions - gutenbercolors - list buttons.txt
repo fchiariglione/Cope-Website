@@ -1,0 +1,28 @@
+
+"primary"        => "#003555",
+"primarylight"   => "#046BAC",
+"secondary"      => "#A4BB82",
+"secondarylight" => "#BAD37E",
+"secondarydark"  => "#5B6947",
+"tertiary"       => "#C59766",
+"tertiarylight"  => "#CADBE7",
+"quaternary"     => "#93BB33",
+"grey"           => "#F3F5F1",
+"greylight"      => "#eaeaea",
+"white"          => "#ffffff",
+"black"          => "#000000",
+
+---------------------------------------------------------------
+
+Buttons List Select 
+
+btn-1 primarylight : Light Blue Button
+btn-1 outline white : White Button
+btn-1 white : White Button 2
+btn-1 outline primarylight : Blue Button
+btn-1 primary : Dark Blue Button
+btn-1 secondary : Light Green Button
+btn-1 tertiary : Gold Button
+btn-2 arrow white : Button With arrow
+
+---------------------------------------------------------------
